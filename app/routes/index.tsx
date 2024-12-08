@@ -1,7 +1,8 @@
 // app/routes/index.tsx
-import * as fs from 'node:fs'
-import { createFileRoute, useRouter } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/start'
+import { createFileRoute, useRouter } from '@tanstack/react-router';
+import { createServerFn } from '@tanstack/start';
+import * as fs from 'node:fs';
+import '../global-middlewares';
 
 const filePath = 'count.txt'
 
